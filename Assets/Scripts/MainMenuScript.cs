@@ -17,7 +17,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void settingButton()
     {
-        
+        SceneManager.LoadScene("Setting");
     }
 
     public void helpButton()
