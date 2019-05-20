@@ -12,7 +12,7 @@ public class MainMenuScript : MonoBehaviour
     
     public void loadGameButton()
     {
-        
+       SceneManager.LoadScene("Load");
     }
 
     public void settingButton()
@@ -22,11 +22,15 @@ public class MainMenuScript : MonoBehaviour
 
     public void helpButton()
     {
-        
+        SceneManager.LoadScene("Help");        
     }
 
     public void quitButton()
     {
-        
+    }
+
+    public void returnButton()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
