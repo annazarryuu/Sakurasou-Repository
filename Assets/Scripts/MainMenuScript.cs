@@ -5,28 +5,59 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
-    public void newGameButton()
+    public void toGame()
     {
         SceneManager.LoadScene("MainGame");
     }
     
-    public void loadGameButton()
+    public void toLoadGame()
     {
-        
+       SceneManager.LoadScene("Load");
     }
 
-    public void settingButton()
+    public void toSaveGame()
+    {
+        SceneManager.LoadScene("Save");
+    }
+
+    public void toSetting()
     {
         SceneManager.LoadScene("Setting");
     }
 
-    public void helpButton()
+    public void toHelp()
     {
-        
+        SceneManager.LoadScene("Help");        
     }
 
-    public void quitButton()
+    public void toMainMenu()
     {
-        
+        SceneManager.LoadScene("MainMenu");
+    }
+    
+    public void toHistory()
+    {
+       SceneManager.LoadScene("History");
+    }
+    
+    public void toLoadGameFromGame()
+    {
+       SceneManager.LoadScene("LoadFromGame");
+    }
+
+    public void toSettingFromGame()
+    {
+        SceneManager.LoadScene("SettingFromGame");
+    }
+
+    public void toHelpFromGame()
+    {
+        SceneManager.LoadScene("HelpFromGame");        
+    }
+
+    public void toDesktop()
+    {
+        Application.Quit();
+        // SceneManager.LoadScene("Desktop"); 
     }
 }
